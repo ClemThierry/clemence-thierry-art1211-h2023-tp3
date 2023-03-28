@@ -1,0 +1,19 @@
+:root {
+    --text-color: #373737;
+    --dark-green: #314C3F;
+    --medium-green: #8E9685;
+    --light-green: #C6CAC3;
+    --medium-beige: #D4B6AA;
+    --light-beige: #F8F7F6;
+    --light-brown: #D5CCC2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
