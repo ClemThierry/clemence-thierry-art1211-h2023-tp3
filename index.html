@@ -29,9 +29,10 @@
     '._     """----.....______.....----"""     _.'
       `""--..,,_____            _____,,..--""`
                      `"""----"""` -->
-    <title>June</title>
+    <title>Green Attitude</title>
     <link rel="icon" href="" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/indexStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jost:wght@300&display=swap" rel="stylesheet">
@@ -41,15 +42,13 @@
 
     <nav>
         <img class="logo" src="images/logo-GreenAttitude.png" alt="Logo Green Attitude" />
-        <div class="toggle">
-            <i class="fas fa-bars ouvrir"></i>
-            <i class="fas fa-times fermer"></i>
-        </div>
+        <img class="open open-close" src="images/icons8-menu.svg" />
+        <img class="close open-close hide" src="images/icons8-effacer.svg" />
         <ul class="menu">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Types de plantes</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="plantes.html">Types de plantes</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><button class="btn">Inscription</button></li>
             <li><button class="btn btn-secondary">Connexion</button></li>
         </ul>
@@ -63,23 +62,80 @@
             <img src="images/plantHeader.png" alt="plante" />
         </div>
     </header>
-    <section>
-        <h2>L</h2>
-
+    <section id="advices">
+        <h3>Nos conseils du moment</h3>
+        <div>
+            <div class="card-article">
+                <div>
+                    <h4>Comment choisir sa plante d'intérieur ?</h4>
+                    <p>Sofia Bricot</p>
+                </div>
+            </div>
+            <div class="card-article">
+                <div>
+                    <h4>Faire des boutures en 3 étapes</h4>
+                    <p>Marie Do</p>
+                </div>
+            </div>
+            <div class="card-article">
+                <div>
+                    <h4>10 choses à savoir sur les plantes carnivores</h4>
+                    <p>Sofia Bricot</p>
+                </div>
+            </div>
+            <div class="card-article">
+                <div>
+                    <h4>Faire des boutures en 3 étapes</h4>
+                    <p>Marie Do</p>
+                </div>
+            </div>
+        </div>
+        <a href="blog.html"><button class="btn">Plus d'articles</button></a>
+    </section>
+    <section id="presentation">
+        <h3>Qui sommes-nous ?</h3>
+        <div>
+            <img src="images/roxxie-blackham-MMlGbX9BmAo-unsplash.jpg" alt="" />
+            <div>
+                <p>
+                    Rencontrez Marie et Sofia, les fondatrices de "Green Attitude", une application innovante conçue pour aider les amateurs de plantes à prendre soin de leurs végétaux préférés. Marie et Sofia sont toutes les deux des passionnées de plantes depuis leur enfance,
+                    et ont développé une expertise impressionnante dans le domaine de l'horticulture au fil des années.</p>
+                <br>
+                <p> Après avoir constaté le manque d'outils pratiques pour aider les amateurs de plantes à prendre soin de leurs végétaux, Marie et Sofia ont décidé de créer leur propre application. Grâce à leur expérience et leur savoir-faire, elles ont
+                    conçu une plateforme intuitive et facile à utiliser, qui fournit des conseils personnalisés sur l'arrosage, l'exposition à la lumière, la fertilisation et bien plus encore.</p>
+                <br>
+                <p> Avec Green Attitude, les utilisateurs peuvent enregistrer leurs plantes et recevoir des notifications pour leur rappeler quand arroser, fertiliser ou tailler leurs plantes. L'application offre également des informations utiles sur les
+                    plantes, y compris des conseils pour résoudre les problèmes courants tels que les maladies et les parasites.</p>
+                <br>
+                <p> Marie et Sofia sont fières d'avoir créé une application qui aide les gens à prendre soin de leurs plantes de manière efficace et responsable. Ils continuent à travailler dur pour améliorer Green Attitude, et espèrent inspirer les gens
+                    à se connecter avec la nature et à découvrir la beauté des plantes.
+                </p>
+            </div>
+        </div>
     </section>
     <section id="application">
         <div>
-            <h2>Télécharger l'application</h2>
+            <h3>Télécharger l'application</h3>
             <p>Prenez soin de vos plantes sans même avoir à y penser ! Elles vous enverront elles-même un rappel au moment de vous en occuper. Retrouvez aussi tous les détails pour tout connaître sur elles.</p>
             <div class="download-boutons">
-                <img src="images/app-store-bouton.png" alt="app store bouton" />
-                <img src="images/google-play-bouton.png" alt="google play bouton" />
+                <img class="btn-download" src="images/app-store-bouton.png" alt="app store bouton" />
+                <img class="btn-download" src="images/google-play-bouton.png" alt="google play bouton" />
             </div>
         </div>
         <img src="images/telephoneMockup.png" alt="Mockup Application Green Attitude" />
     </section>
-    <footer></footer>
-    <script src="script.js"></script>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="plantes.html">Types de plantes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright © Clémence THIERRY All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

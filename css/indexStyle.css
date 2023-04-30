@@ -1,0 +1,180 @@
+/*Header*/
+
+header {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100vh;
+    padding: 8%;
+    background-image: url("../images/blob-haikei.svg");
+    background-size: cover;
+}
+
+header>div>h1 {
+    font-size: 5em;
+}
+
+header>div {
+    margin: auto;
+    text-align: right;
+}
+
+
+/*Partie téléchargement de l'application*/
+
+#application {
+    margin: 0 15vw 0 15vw;
+    background-color: #c8d5b990;
+    padding: 50px 30px 0 30px;
+    border-radius: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#application>div {
+    align-self: center;
+}
+
+.download-boutons {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.download-boutons>img {
+    max-width: 40%;
+}
+
+#application>img {
+    max-width: 50%;
+    justify-self: center;
+    align-self: end;
+    transition-duration: 1s;
+}
+
+.btn-download:hover {
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+
+
+/*Conseils*/
+
+#advices {
+    background-color: var(--dark-green);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+#advices>h3,
+#advices>a {
+    color: #fffefb;
+    text-decoration: none;
+}
+
+#advices>a {
+    font-size: 2em;
+    text-align: center;
+    transition-duration: 1s;
+}
+
+#advices>a :hover {
+    transform: scale(1.2);
+    transition-duration: .4s;
+}
+
+#advices>div {
+    display: flex;
+    justify-content: space-around;
+    gap: 5vh;
+    flex-wrap: wrap;
+    margin: 30px 0 30px 0;
+}
+
+.card-article {
+    height: 40vh;
+    width: 30vh;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-position: bottom;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.card-article>div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4%;
+    background-color: #fffefbd0;
+}
+
+.card-article:nth-child(1) {
+    background-image: url("../images/plantesInterieure.jpg");
+}
+
+.card-article:nth-child(2) {
+    background-image: url("../images/planteCarnivore.jpg");
+}
+
+.card-article:nth-child(3) {
+    background-image: url("../images/bouture.jpg");
+}
+
+.card-article:nth-child(4) {
+    background-image: url("../images/plantesInterieure.jpg");
+}
+
+
+/*Présentation*/
+
+#presentation {
+    padding: 100px;
+}
+
+#presentation>div {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+#presentation>div>* {
+    align-self: center;
+}
+
+#presentation img {
+    -webkit-clip-path: ellipse(41% 50% at 50% 50%);
+    clip-path: ellipse(41% 50% at 50% 50%);
+}
+
+@media only screen and (max-width: 768px) {
+    /*Header*/
+    header,
+    #application,
+    #presentation>div {
+        grid-template-columns: 1fr;
+    }
+    header>div {
+        text-align: center;
+    }
+    header>div:nth-child(2)>img {
+        max-height: 50vh;
+    }
+    #advices,
+    #presentation {
+        padding: 100px 20px 100px 20px;
+    }
+    #presentation img {
+        margin-bottom: 30px;
+    }
+    /*Appli*/
+    #application {
+        margin-right: 0;
+        margin-left: 7vw;
+        max-width: 93vw;
+    }
+}

@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin-left: 10vw;
+}
+
+main>* {
+    margin: auto;
+}

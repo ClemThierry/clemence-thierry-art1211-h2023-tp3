@@ -4,7 +4,8 @@
     --light-green: #C8D5B9;
     --light-blue: #8FC0A9;
     --blue: #68B0AB;
-    --dark-green: #4A7C59;
+    --dark-green: #584a7c;
+    --mask: radial-gradient(98.62px at 50% 132.75px, #000 99%, #0000 101%) calc(50% - 90px) 0/180px 51% repeat-x, radial-gradient(98.62px at 50% -87.75px, #0000 99%, #000 101%) 50% 45px/180px calc(51% - 45px) repeat-x, radial-gradient(98.62px at 50% calc(100% - 132.75px), #000 99%, #0000 101%) calc(50% - 90px) 100%/180px 51% repeat-x, radial-gradient(98.62px at 50% calc(100% + 87.75px), #0000 99%, #000 101%) 50% calc(100% - 45px)/180px calc(51% - 45px) repeat-x;
 }
 
 * {
@@ -15,7 +16,14 @@
 
 body {
     background-color: #fffefb;
+    /* background-color: #584a7c; */
     color: var(--text-color);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main {
+    min-height: 100vh;
 }
 
 p,
@@ -33,6 +41,11 @@ h2 {
     color: var(--dark-green);
 }
 
+h3 {
+    font-size: 2.7em;
+    margin-bottom: 30px;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -45,38 +58,40 @@ nav {
     right: 0;
     height: 10vh;
     padding: 15px;
-    background-color: #ffffff00;
+    background-color: #fffefb;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .logo {
     margin-left: 20px;
 }
 
-.toggle {
+.open-close {
     display: none;
+    z-index: 2;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style: none;
     width: 550px;
 }
 
-.menu li a {
+nav li a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-.menu li {
+nav li {
     transition-duration: 1s;
+    list-style: none;
 }
 
-.menu li:hover {
+nav li:hover {
     font-weight: bolder;
     transform: scale(1.2);
     transition-duration: .4s;
@@ -97,105 +112,69 @@ nav {
 }
 
 
-/*Header*/
+/*Footer*/
 
-header {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    height: 100vh;
-    padding: 8%;
-    background-image: url("../images/blob-haikei.svg");
-    background-size: cover;
-}
-
-header>div>h1 {
-    font-size: 5em;
-}
-
-header>div {
-    margin: auto;
-    text-align: right;
-}
-
-
-/*Partie téléchargement de l'application*/
-
-#application {
-    margin: 0 15vw 0 15vw;
-    background-color: var(--light-green);
-    padding: 50px 30px 0 30px;
-    border-radius: 20px 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#application>div {
-    align-self: center;
-}
-
-.download-boutons {
+footer {
     display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 60px 20px 60px;
+    background-color: var(--dark-green);
+    color: white;
 }
 
-.download-boutons>img {
-    max-width: 40%;
+footer>* {
+    font-size: 1.1em;
+    background-color: var(--dark-green);
 }
 
-#application>img {
-    max-width: 50%;
-    justify-self: center;
-    align-self: end;
+footer>nav>ul>li {
+    margin-right: 20px;
 }
 
-@media all and (max-width: 991px) {
-    header {
-        background: transparent;
-    }
-    .toggle {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        position: relative;
-        z-index: 20;
-    }
-    .logo {
-        position: relative;
-        z-index: 20;
-    }
-    .ouvrir {
-        display: block;
-    }
-    .fermer {
-        display: none;
-    }
-    .open .ouvrir {
-        display: none;
-    }
-    .open .fermer {
-        display: block;
-    }
+footer>nav>ul>li>a {
+    color: white;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+
+} */
+
+@media only screen and (max-width: 768px) {
+    /*Menu*/
     .menu {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        background: #000;
+        background: #ffffffea;
         flex-direction: column;
-        padding: 2rem;
         justify-content: space-around;
         transform: translateX(-100%);
         transition: transform 1s;
+        font-size: 1.7em;
     }
-    .menu li a {
-        font-size: 2rem;
+    .menu .btn {
+        font-size: 1em;
     }
-    .btn {
-        font-size: 2rem;
+    .menu-open {
+        transform: translateX(0) !important;
     }
-    .open .menu {
-        transform: translateX(0);
+    .open-close {
+        display: unset;
+        position: absolute;
+        right: 0;
+        height: 70%;
+    }
+    .logo {
+        width: 50%;
+    }
+    .hide {
+        display: none;
+    }
+    footer {
+        padding: 30px;
     }
 }
