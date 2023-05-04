@@ -8,6 +8,16 @@
     --mask: radial-gradient(98.62px at 50% 132.75px, #000 99%, #0000 101%) calc(50% - 90px) 0/180px 51% repeat-x, radial-gradient(98.62px at 50% -87.75px, #0000 99%, #000 101%) 50% 45px/180px calc(51% - 45px) repeat-x, radial-gradient(98.62px at 50% calc(100% - 132.75px), #000 99%, #0000 101%) calc(50% - 90px) 100%/180px 51% repeat-x, radial-gradient(98.62px at 50% calc(100% + 87.75px), #0000 99%, #000 101%) 50% calc(100% - 45px)/180px calc(51% - 45px) repeat-x;
 }
 
+h2 {
+    font-size: 2em;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+p {
+    padding: 2% 3% 2% 3%;
+}
+
 header {
     background-image: url("/images/Plantes/celling-plant.png");
     background-repeat: repeat-x;
@@ -25,18 +35,13 @@ header>h1 {
     padding: 7px;
 }
 
-#mesPlantes>h2 {
-    font-size: 2em;
-    padding-top: 5%;
-    padding-left: 5%;
-}
-
 .plantsGallery {
     display: flex;
     gap: 30px;
     justify-content: center;
     padding: 5vh;
     padding-top: 2vh;
+    overflow: auto;
 }
 
 .plantCard {
@@ -53,10 +58,17 @@ header>h1 {
     transition-duration: 0.4s;
 }
 
-.plantCard>.infoPlante {
+.plantCard>.pictoPlante {
     position: absolute;
     top: 23%;
+}
+
+.statu {
     left: 5%;
+}
+
+.ajout {
+    right: 5%;
 }
 
 .plantCard>.illuPlante {
@@ -76,8 +88,26 @@ header>h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--light-blue);
     border-radius: 20px;
     z-index: -1;
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#mesPlantes .cardFond {
+    background-color: var(--light-blue);
+}
+
+
+/* .cardFond {
+    border: 4px solid var(--light-blue);
+} */
+
+@media only screen and (max-width: 768px) {
+    .plantsGallery {
+        justify-content: initial;
+        padding: 3vh;
+    }
+    .plantCard {
+        min-width: 35vw;
+    }
 }

@@ -202,3 +202,16 @@ main {
 .userInfo>small {
     color: #666;
 }
+
+@media only screen and (max-width: 768px) {
+    header>h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    #filtres>* {
+        width: 90%;
+    }
+}
