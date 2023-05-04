@@ -1,15 +1,17 @@
-let openMenuButton = document.querySelector(".open");
-let closeMenuButton = document.querySelector(".close");
+/*Animation du menu mobile*/
+
+let ouvrirMenuButton = document.querySelector(".ouvrir");
+let fermerMenuButton = document.querySelector(".fermer");
 
 
-openMenuButton.addEventListener("click", () => {
-    closeMenuButton.classList.remove("hide");
-    document.querySelector(".menu").classList.add("menu-open");
-    openMenuButton.classList.add("hide");
+ouvrirMenuButton.addEventListener("click", () => {
+    fermerMenuButton.classList.remove("cache");
+    document.querySelector(".menu").classList.add("menu-ouvrir");
+    ouvrirMenuButton.classList.add("cache");
 })
 
-closeMenuButton.addEventListener("click", () => {
-    openMenuButton.classList.remove("hide");
-    document.querySelector(".menu").classList.remove("menu-open");
-    closeMenuButton.classList.add("hide");
+fermerMenuButton.addEventListener("click", () => {
+    ouvrirMenuButton.classList.remove("cache");
+    document.querySelector(".menu").classList.remove("menu-ouvrir");
+    fermerMenuButton.classList.add("cache");
 })

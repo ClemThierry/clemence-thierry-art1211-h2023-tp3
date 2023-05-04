@@ -5,7 +5,7 @@ header {
     grid-template-columns: 3fr 2fr;
     height: 100vh;
     padding: 8%;
-    background-image: url("../images/blob-haikei.svg");
+    background-image: url("../images/fond-tache.svg");
     background-size: cover;
 }
 
@@ -34,13 +34,13 @@ header>div {
     align-self: center;
 }
 
-.download-boutons {
+.boutonsTéléchargement {
     display: flex;
     padding: 20px;
     justify-content: space-evenly;
 }
 
-.download-boutons>img {
+.boutonsTéléchargement>img {
     max-width: 40%;
 }
 
@@ -59,7 +59,7 @@ header>div {
 
 /*Conseils*/
 
-#advices {
+#conseils {
     background-color: var(--dark-green);
     min-height: 500px;
     display: flex;
@@ -69,24 +69,24 @@ header>div {
     mask: var(--mask);
 }
 
-#advices>h3,
-#advices>a {
+#conseils>h3,
+#conseils>a {
     color: #fffefb;
     text-decoration: none;
 }
 
-#advices>a {
+#conseils>a {
     font-size: 2em;
     text-align: center;
     transition-duration: 1s;
 }
 
-#advices>a :hover {
+#conseils>a :hover {
     transform: scale(1.2);
     transition-duration: .4s;
 }
 
-#advices>div {
+#conseils>div {
     display: flex;
     justify-content: space-around;
     gap: 5vh;
@@ -151,6 +151,9 @@ header>div {
     clip-path: ellipse(41% 50% at 50% 50%);
 }
 
+
+/*Partie Responsive page accueil*/
+
 @media only screen and (max-width: 768px) {
     /*Header*/
     header,
@@ -164,7 +167,7 @@ header>div {
     header>div:nth-child(2)>img {
         max-height: 50vh;
     }
-    #advices,
+    #conseils,
     #presentation {
         padding: 100px 20px 100px 20px;
     }

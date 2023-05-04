@@ -1,3 +1,5 @@
+/*Code commun aux 4 pages*/
+
 :root {
     --text-color: #373737;
     --beige: #FAF3DD;
@@ -16,7 +18,6 @@
 
 body {
     background-color: #fffefb;
-    /* background-color: #584a7c; */
     color: var(--text-color);
     width: 100vw;
     overflow-x: hidden;
@@ -70,7 +71,7 @@ nav {
     margin-left: 20px;
 }
 
-.open-close {
+.ouvrir-fermer {
     display: none;
     z-index: 2;
 }
@@ -99,7 +100,7 @@ nav li:hover {
     transition-duration: .4s;
 }
 
-.btn {
+.bouton {
     border: 0;
     background: var(--light-green);
     font-size: 1rem;
@@ -108,7 +109,7 @@ nav li:hover {
     font-family: 'Jost', sans-serif;
 }
 
-.btn.btn-secondary {
+.bouton.boutonSecond {
     background: transparent;
     border: 2px solid var(--light-green);
 }
@@ -145,9 +146,7 @@ footer>nav>ul>li>a {
 }
 
 
-/* @media only screen and (max-width: 600px) {
-
-} */
+/*Partie Responsive pour le menu et le footer*/
 
 @media only screen and (max-width: 768px) {
     /*Menu*/
@@ -164,13 +163,13 @@ footer>nav>ul>li>a {
         transition: transform 1s;
         font-size: 1.7em;
     }
-    .menu .btn {
+    .menu .bouton {
         font-size: 1em;
     }
-    .menu-open {
+    .menu-ouvrir {
         transform: translateX(0) !important;
     }
-    .open-close {
+    .ouvrir-fermer {
         display: unset;
         position: absolute;
         right: 15px;
@@ -179,7 +178,7 @@ footer>nav>ul>li>a {
     .logo {
         width: 50%;
     }
-    .hide {
+    .cache {
         display: none;
     }
     footer {

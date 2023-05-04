@@ -45,12 +45,12 @@ main {
     width: 70%;
 }
 
-.search {
+.chercher {
     position: relative;
     display: flex;
 }
 
-.searchTerm {
+.chercherTexte {
     width: 100%;
     border: 3px solid var(--light-green);
     border-right: none;
@@ -62,11 +62,11 @@ main {
     font-family: 'Jost', sans-serif;
 }
 
-.searchTerm:focus {
+.chercherTexte:focus {
     color: var(--light-green);
 }
 
-.searchButton {
+.chercherBouton {
     height: 50px;
     width: 50px;
     border: 1px solid;
@@ -78,7 +78,7 @@ main {
     font-size: 20px;
 }
 
-.searchButton>img {
+.chercherBouton>img {
     height: 80%;
 }
 
@@ -108,7 +108,7 @@ main {
     color: white;
 }
 
-.selectedCat {
+.choisi {
     background-color: var(--dark-green);
     color: white;
 }
@@ -133,16 +133,16 @@ main {
 }
 
 
-/*Cards*/
+/*cartes*/
 
-#articlesGallery {
+#gallerieArticles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 40px;
 }
 
-.card {
+.carte {
     display: flex;
     flex-direction: column;
     width: clamp(20rem, calc(20rem + 2vw), 22rem);
@@ -154,7 +154,7 @@ main {
     font-family: 'Jost', sans-serif;
 }
 
-.cardBody {
+.bodyCarte {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -172,19 +172,19 @@ main {
     margin-left: .5em;
 }
 
-.tagBlue {
+.tagVert {
     background: var(--blue);
     background: linear-gradient(to bottom, var(--light-blue), var(--blue));
     color: #fafafa;
 }
 
-.cardBody h4 {
+.bodyCarte h4 {
     font-size: 1.5rem;
     text-transform: capitalize;
     color: var(--dark-green);
 }
 
-.cardFooter {
+.carteFooter {
     display: flex;
     padding: 1rem;
     margin-top: auto;
@@ -195,13 +195,16 @@ main {
     gap: .5rem;
 }
 
-.userImage {
+.photoAutrice {
     border-radius: 50%;
 }
 
-.userInfo>small {
+.infoPublication>small {
     color: #666;
 }
+
+
+/*Partie Responsive page blog*/
 
 @media only screen and (max-width: 768px) {
     header>h1 {

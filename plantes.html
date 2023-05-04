@@ -2,12 +2,30 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4W3T3BFSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4W3T3BFSS');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog lifestyle">
+    <meta name="description" content="Site et application qui t'aide à prendre soin de tes plantes peu importe leur type !">
     <meta name="author" content="Clémence Thierry">
-    <title>Green Attitude - Types de plantes</title>
+    <meta property="og:url" content="etu-cnm.uqat.ca/plantes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Green Attitude - Les plantes" />
+    <meta property="og:description" content="Découvre comment prendre soin de tes plantes et parcours les différents types de végétaux." />
+    <meta property="og:image" content="https://etu-cnm.uqat.ca/20231-art1211/thic32/tp3/images/logo-GreenAttitude-grand.jpeg" />
+    <meta property="og:image:alt" content="logo Green Attitude" />
+    <title>Green Attitude - Plantes</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/plantesStyle.css">
@@ -19,95 +37,95 @@
 <body>
     <nav>
         <img class="logo" src="images/logo-GreenAttitude.png" alt="Logo Green Attitude" />
-        <img class="open open-close" src="images/icons8-menu.svg" />
-        <img class="close open-close hide" src="images/icons8-effacer.svg" />
+        <img class="ouvrir ouvrir-fermer" src="images/icone-menu.svg" />
+        <img class="fermer ouvrir-fermer cache" src="images/icone-fermer.svg" />
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="plantes.html">Types de plantes</a></li>
+            <li><a href="plantes.html">Plantes</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button class="btn">Inscription</button></li>
-            <li><button class="btn btn-secondary">Connexion</button></li>
+            <li><button class="bouton">Inscription</button></li>
+            <li><button class="bouton boutonSecond">Connexion</button></li>
         </ul>
     </nav>
     <header>
-        <h1>Les différents types de plantes</h1>
+        <h1>Les Plantes</h1>
     </header>
     <section id="mesPlantes">
         <h2>Mes Plantes</h2>
-        <div class="plantsGallery">
-            <div class="plantCard">
-                <img class="pictoPlante statu" src="/images/Plantes/icons8-humide-50.png" alt="icone plante à arroser" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+        <div class="galleriePlantes">
+            <div class="cartePlante">
+                <img class="pictoPlante statu" src="images/Plantes/icone-plante-eau.png" alt="icone plante à arroser" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Strelitzia nicolai</h4>
                     <p>Intérieur</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante statu" src="/images/Plantes/icons8-ok.svg" alt="icone plante ok (sans besoins)" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Cereus jamacaru" />
+            <div class="cartePlante">
+                <img class="pictoPlante statu" src="images/Plantes/icone-plante-ok.svg" alt="icone plante ok (sans besoins)" />
+                <img class="illuPlante" src="images/Plantes/CereusJamacaru.png" alt="Cereus jamacaru" />
                 <div>
                     <h4>Cereus jamacaru</h4>
                     <p>Intérieur</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante statu" src="/images/Plantes/icons8-humide-50.png" alt="icone plante à arroser" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Aphelandra squarrosa" />
+            <div class="cartePlante">
+                <img class="pictoPlante statu" src="images/Plantes/icone-plante-eau.png" alt="icone plante à arroser" />
+                <img class="illuPlante" src="images/Plantes/AphelandraSquarrosa.png" alt="Aphelandra squarrosa" />
                 <div>
                     <h4>Aphelandra squarrosa</h4>
                     <p>Extérieur</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
         </div>
     </section>
     <section id="fougeres">
         <h2>Les Fougères</h2>
         <p>Les fougères sont des plantes d'intérieur très populaires en raison de leur apparence élégante et de leurs feuilles vertes en forme de plumes. Elles ont besoin d'une humidité constante et d'un éclairage indirect pour prospérer.</p>
-        <div class="plantsGallery">
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+        <div class="galleriePlantes">
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Fougère 1</h4>
                     <p>Dimensions</p>
                     <p>90 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Fougère 2</h4>
                     <p>Dimensions</p>
                     <p>70 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Fougère 3</h4>
                     <p>Dimensions</p>
                     <p>110 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Fougère 4</h4>
                     <p>Dimensions</p>
                     <p>90 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
         </div>
     </section>
@@ -115,112 +133,112 @@
         <h2>Les Succulentes</h2>
         <p>Les succulentes sont des plantes d'intérieur idéales pour les débutants car elles sont faciles à entretenir et à arroser. Elles ont des feuilles épaisses et charnues qui leur permettent de stocker de l'eau, ce qui leur permet de survivre dans
             des conditions arides.</p>
-        <div class="plantsGallery">
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Cereus jamacaru" />
+        <div class="galleriePlantes">
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/CereusJamacaru.png" alt="Cereus jamacaru" />
                 <div>
                     <h4>Succulente 1</h4>
                     <p>Dimensions</p>
                     <p>80 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Aphelandra squarrosa" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/AphelandraSquarrosa.png" alt="Aphelandra squarrosa" />
                 <div>
                     <h4>Succulente 2</h4>
                     <p>Dimensions</p>
                     <p>90 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Cereus jamacaru" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/CereusJamacaru.png" alt="Cereus jamacaru" />
                 <div>
                     <h4>Succulente 3</h4>
                     <p>Dimensions</p>
                     <p>90 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Aphelandra squarrosa" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/AphelandraSquarrosa.png" alt="Aphelandra squarrosa" />
                 <div>
                     <h4>Succulente 4</h4>
                     <p>Dimensions</p>
                     <p>65 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
         </div>
     </section>
     <section id="palmiers">
         <h2>Les Palmiers</h2>
         <p>Les palmiers sont des plantes d'intérieur populaires pour leur apparence exotique et leur feuillage luxuriant. Ils nécessitent une forte luminosité et une humidité modérée pour prospérer.</p>
-        <div class="plantsGallery">
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+        <div class="galleriePlantes">
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Palmier 1</h4>
                     <p>Dimensions</p>
                     <p>70 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Cereus jamacaru" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/CereusJamacaru.png" alt="Cereus jamacaru" />
                 <div>
                     <h4>Palmier 2</h4>
                     <p>Dimensions</p>
                     <p>80 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Aphelandra squarrosa" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/AphelandraSquarrosa.png" alt="Aphelandra squarrosa" />
                 <div>
                     <h4>Palmier 3</h4>
                     <p>Dimensions</p>
                     <p>75 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Strelitzia nicolai" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/StrelitziaNicolai.png" alt="Strelitzia nicolai" />
                 <div>
                     <h4>Palmier 4</h4>
                     <p>Dimensions</p>
                     <p>120 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Cereus jamacaru" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/CereusJamacaru.png" alt="Cereus jamacaru" />
                 <div>
                     <h4>Palmier 5</h4>
                     <p>Dimensions</p>
                     <p>110 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
-            <div class="plantCard">
-                <img class="pictoPlante ajout" src="/images/Plantes/icons8-plus.svg" alt="icone ajout plante" />
-                <img class="illuPlante" src="/images/Plantes/plante3.png" alt="Aphelandra squarrosa" />
+            <div class="cartePlante">
+                <img class="pictoPlante ajout" src="images/Plantes/icone-ajout.svg" alt="icone ajout plante" />
+                <img class="illuPlante" src="images/Plantes/AphelandraSquarrosa.png" alt="Aphelandra squarrosa" />
                 <div>
                     <h4>Palmier 6</h4>
                     <p>Dimensions</p>
                     <p>105 cm</p>
                 </div>
-                <div class="cardFond"></div>
+                <div class="fondCarte"></div>
             </div>
         </div>
     </section>
@@ -228,7 +246,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="plantes.html">Types de plantes</a></li>
+                <li><a href="plantes.html">Plantes</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>

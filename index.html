@@ -2,10 +2,22 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4W3T3BFSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4W3T3BFSS');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog lifestyle">
+    <meta name="description" content="Site et application qui t'aide à prendre soin de tes plantes peu importe leur type !">
     <meta name="author" content="Clémence Thierry">
     <!--        (
                  )     (
@@ -29,6 +41,12 @@
     '._     """----.....______.....----"""     _.'
       `""--..,,_____            _____,,..--""`
                      `"""----"""` -->
+    <meta property="og:url" content="etu-cnm.uqat.ca" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Green Attitude" />
+    <meta property="og:description" content="Site et application qui t'aide à prendre soin de tes plantes peu importe leur type !" />
+    <meta property="og:image" content="https://etu-cnm.uqat.ca/20231-art1211/thic32/tp3/images/logo-GreenAttitude-grand.jpeg" />
+    <meta property="og:image:alt" content="logo Green Attitude" />
     <title>Green Attitude</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css">
@@ -39,18 +57,17 @@
 </head>
 
 <body>
-
     <nav>
         <img class="logo" src="images/logo-GreenAttitude.png" alt="Logo Green Attitude" />
-        <img class="open open-close" src="images/icons8-menu.svg" />
-        <img class="close open-close hide" src="images/icons8-effacer.svg" />
+        <img class="ouvrir ouvrir-fermer" src="images/icone-menu.svg" />
+        <img class="fermer ouvrir-fermer cache" src="images/icone-fermer.svg" />
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="plantes.html">Types de plantes</a></li>
+            <li><a href="plantes.html">Plantes</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button class="btn">Inscription</button></li>
-            <li><button class="btn btn-secondary">Connexion</button></li>
+            <li><button class="bouton">Inscription</button></li>
+            <li><button class="bouton boutonSecond">Connexion</button></li>
         </ul>
     </nav>
     <header>
@@ -59,10 +76,10 @@
             <h2>Comment bien vous occuper de vos plantes !</h2>
         </div>
         <div>
-            <img src="images/plantHeader.png" alt="plante" />
+            <img src="images/plantHeader.png" alt="plantes en pots" />
         </div>
     </header>
-    <section id="advices">
+    <section id="conseils">
         <h3>Nos conseils du moment</h3>
         <div>
             <div class="card-article">
@@ -90,12 +107,12 @@
                 </div>
             </div>
         </div>
-        <a href="blog.html"><button class="btn">Plus d'articles</button></a>
+        <a href="blog.html"><button class="bouton">Plus d'articles</button></a>
     </section>
     <section id="presentation">
         <h3>Qui sommes-nous ?</h3>
         <div>
-            <img src="images/roxxie-blackham-MMlGbX9BmAo-unsplash.jpg" alt="" />
+            <img src="images/MarieEtSofia.jpg" alt="Marie et Sofia dans un champ avec des fleurs" />
             <div>
                 <p>
                     Rencontrez Marie et Sofia, les fondatrices de "Green Attitude", une application innovante conçue pour aider les amateurs de plantes à prendre soin de leurs végétaux préférés. Marie et Sofia sont toutes les deux des passionnées de plantes depuis leur enfance,
@@ -117,9 +134,9 @@
         <div>
             <h3>Télécharger l'application</h3>
             <p>Prenez soin de vos plantes sans même avoir à y penser ! Elles vous enverront elles-même un rappel au moment de vous en occuper. Retrouvez aussi tous les détails pour tout connaître sur elles.</p>
-            <div class="download-boutons">
-                <img class="btn-download" src="images/app-store-bouton.png" alt="app store bouton" />
-                <img class="btn-download" src="images/google-play-bouton.png" alt="google play bouton" />
+            <div class="boutonsTéléchargement">
+                <img src="images/app-store-bouton.png" alt="app store bouton" />
+                <img src="images/google-play-bouton.png" alt="google play bouton" />
             </div>
         </div>
         <img src="images/telephoneMockup.png" alt="Mockup Application Green Attitude" />
@@ -128,12 +145,12 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="plantes.html">Types de plantes</a></li>
+                <li><a href="plantes.html">Plantes</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <p>Copyright © Clémence THIERRY All rights reserved.</p>
+        <p>Copyright © Clémence THIERRY Tous droites réservés</p>
     </footer>
     <script src="js/script.js"></script>
 </body>

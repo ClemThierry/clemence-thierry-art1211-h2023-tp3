@@ -2,11 +2,29 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4W3T3BFSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4W3T3BFSS');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog lifestyle">
+    <meta name="description" content="Site et application qui t'aide à prendre soin de tes plantes peu importe leur type !">
     <meta name="author" content="Clémence Thierry">
+    <meta property="og:url" content="etu-cnm.uqat.ca/blog" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Green Attitude - Blog" />
+    <meta property="og:description" content="Apprend encore plus de choses sur les plantes avec les articles de Marie et Sofia !" />
+    <meta property="og:image" content="https://etu-cnm.uqat.ca/20231-art1211/thic32/tp3/images/logo-GreenAttitude-grand.jpeg" />
+    <meta property="og:image:alt" content="logo Green Attitude" />
     <title>Green Attitude - Blog</title>
     <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css">
@@ -19,15 +37,15 @@
 <body>
     <nav>
         <img class="logo" src="images/logo-GreenAttitude.png" alt="Logo Green Attitude" />
-        <img class="open open-close" src="images/icons8-menu.svg" />
-        <img class="close open-close hide" src="images/icons8-effacer.svg" />
+        <img class="ouvrir ouvrir-fermer" src="images/icone-menu.svg" />
+        <img class="fermer ouvrir-fermer cache" src="images/icone-fermer.svg" />
         <ul class="menu">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="plantes.html">Types de plantes</a></li>
+            <li><a href="plantes.html">Plantes</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><button class="btn">Inscription</button></li>
-            <li><button class="btn btn-secondary">Connexion</button></li>
+            <li><button class="bouton">Inscription</button></li>
+            <li><button class="bouton boutonSecond">Connexion</button></li>
         </ul>
     </nav>
     <header>
@@ -35,10 +53,10 @@
     </header>
     <main>
         <section id="filtres">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Que cherches-tu ?">
-                <button type="submit" class="searchButton">
-                  <img src="images/icons8-chercher.svg" alt="search"/>
+            <div class="chercher">
+                <input type="text" class="chercherTexte" placeholder="Que cherches-tu ?">
+                <button type="submit" class="chercherBouton">
+                  <img src="images/icone-loupe.svg" alt="chercher"/>
                </button>
             </div>
             <div class="categories sideElement">
@@ -46,154 +64,154 @@
                 <ul>
                     <li>Plantes intérieures</li>
                     <li>Plantes extérieures</li>
-                    <li class="selectedCat">Santé</li>
+                    <li class="choisi">Santé</li>
                     <li>Débutant</li>
-                    <li>Débutant</li>
+                    <li>Expérimenté</li>
                 </ul>
             </div>
             <div class="auteurs sideElement">
                 <h2>Auteur.e.s</h2>
                 <div>
-                    <div class="selectedCat">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
+                    <div class="choisi">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
                         <p>Marie Do</p>
                     </div>
                     <div>
-                        <img src="https://i.pravatar.cc/40?img=10" alt="userImage" class="userImage">
+                        <img src="https://i.pravatar.cc/40?img=10" alt="photo de Sofia" class="photoAutrice">
                         <p>Sofia Bricot</p>
                     </div>
                 </div>
 
             </div>
         </section>
-        <section id="articlesGallery">
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/infusions.jpg" alt="cardImage" class="cardImage" width="600">
+        <section id="gallerieArticles">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/infusions.jpg" alt="tasses d'infusions" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Les bienfaits des plantes sur la santé mentale</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 43 min</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/smoothieVert.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/smoothieVert.jpg" alt="smoothie vert" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Les plantes d'intérieur qui purifient l'air</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 2h</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/gourdeEtFruits.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/gourdeEtFruits.jpg" alt="gourde d'eau et fruits sur fond vert" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Comment les plantes peuvent améliorer la qualité de l'air intérieur</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 48h</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/mortier.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/mortier.jpg" alt="mortier en cuivre" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Les plantes médicinales et leurs bienfaits</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 2 jours</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/infusions.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/infusions.jpg" alt="tasses d'inffusions" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Comment utiliser les plantes pour améliorer le sommeil </h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 8 jours</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/gourdeEtFruits.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/gourdeEtFruits.jpg" alt="gourde d'eau et fruits sur fond vert" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Les plantes comestibles et leur impact sur la santé</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 2 semaines</small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="cardHeader">
-                    <img src="images/Blog/mortier.jpg" alt="cardImage" class="cardImage" width="600">
+            <div class="carte">
+                <div>
+                    <img src="images/Blog/mortier.jpg" alt="mortier en cuivre" width="600">
                 </div>
-                <div class="cardBody">
-                    <span class="tag tagBlue">Santé</span>
+                <div class="bodyCarte">
+                    <span class="tag tagVert">Santé</span>
                     <h4>Les plantes aromatiques et leur impact sur la santé</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
                 </div>
-                <div class="cardFooter">
+                <div class="carteFooter">
                     <div class="user">
-                        <img src="https://i.pravatar.cc/40?img=1" alt="userImage" class="userImage">
-                        <div class="userInfo">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="photo de Marie" class="photoAutrice">
+                        <div class="infoPublication">
                             <h5>Marie Do</h5>
                             <small>il y a 3 semaines</small>
                         </div>
@@ -206,7 +224,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="plantes.html">Types de plantes</a></li>
+                <li><a href="plantes.html">Plantes</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
